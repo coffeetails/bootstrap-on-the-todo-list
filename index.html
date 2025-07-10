@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap on the Todo list</title>
+	<meta name="description" content="" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+	<meta name="theme-color" content="#ffea00">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+	<body class="w-100 h-100 px-2">
+        <form class="row container-sm mx-auto mt-5 px-2 py-3 border border-2 rounded" style="max-width: 40rem;">
+            <h1>Bootstrap on the Todo list</h1>
+
+            <div class="mb-3 p-0">
+                <label for="input-title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="input-title" placeholder="bootstraps" />
+            </div>
+
+            <div class="mb-3 p-0">
+                <label for="input-description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="input-description" placeholder="bootstraps for my boots to strap them" />
+            </div>
+
+            <label for="input-duedate" class="col-6 form-label p-0">Due date
+                <input type="datetime-local" id="input-duedate" class="form-control" />
+            </label>
+            
+            <div class="col-6 p-0">
+                <label for="input-person" class="">Assign to Person (optional)</label>
+                <select class="form-select" id="input-person">
+                    <option value="" selected>- ingen vald -</option>
+                    <option value="pelpah">Pelle Påhittat</option>
+                    <option value="stiner">Stig Ner</option>
+                    <option value="janbla">Janne Blåtand</option>
+                    <option value="persil">Per Silja</option>
+                </select>
+            </div>
+
+            <div class="mb-3 p-0">
+                <label for="input-file" class="form-label">Attatchments</label>
+                <div class="input-group">
+                    <input type="file" class="form-control" id="input-file" multiple />
+                    <span class="input-group-text" id="basic-addon3">X</span>
+                </div>
+            </div>
+
+            <input type="submit" class="btn bg-success-subtle justify-content-end border border-success border-2">
+        </form>
+
+        <section class="card container-sm mx-auto mt-3 mb-5 list-group" style="max-width: 40rem;">
+            <header class="card-body row">
+                <div class="col">
+                    <h2 class="card-title">Todos</h2>
+                </div>
+                <div class="btn-group btn-group-sm col" style="height: min-content; flex: 0 !important;"> <!-- bc f bs -->
+                    <button class="btn btn-outline-secondary">F</button>
+                    <button class="btn btn-outline-secondary">S</button>
+                </div>
+            </header>
+        
+            <main class="card-body">
+                <section class="">
+                    Todos will appear here
+                </section>
+            </main>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+	</body>
+</html>
